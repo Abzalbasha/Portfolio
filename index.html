@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Abzal Basha S | Cloud DevOps Engineer</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script defer src="app.js"></script>
+  <script defer src="script.js"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    /* Hero Section */
+    .hero-bg {
+      background: url('images/your-hero-image.jpg') no-repeat center center/cover;
+      height: 80vh; /* Adjusted height */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero-title {
+      font-size: 3rem; /* Slightly larger font size */
+      font-weight: 700;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    .hero-subtitle {
+      font-size: 1.75rem; /* Slightly larger font size */
+      margin-top: 0.5rem;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .hero-contact {
+      font-size: 1.125rem; /* Adjusted font size */
+      margin-top: 1rem;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Section Titles */
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 1rem;
+      animation: fadeInUp 0.5s ease;
+    }
+
+    /* Cards and Skills */
+    .card {
+      background-color: #1a202c;
+      border-radius: 0.75rem;
+      padding: 2rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      color: #ffffff;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card a {
+      color: #60a5fa;
+      text-decoration: underline;
+    }
+
+    /* Skill Section */
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .skill {
+      width: 120px;
+      height: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #1a202c;
+      border-radius: 0.75rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      color: #ffffff;
+    }
+
+    .skill:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .skill img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 0.5rem;
+    }
+
+    .skill p {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    /* Background for all sections */
+    section {
+      background: url('images/background-pattern.jpg') no-repeat center center/cover;
+      padding: 4rem 0;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white">
+  <!-- Navbar -->
+  <nav class="bg-gray-800 p-5">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Abzal Basha S | Cloud DevOps Engineer</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#about" class="hover:text-blue-400">About</a></li>
+        <li><a href="#skills" class="hover:text-blue-400">Skills</a></li>
+        <li><a href="#experience" class="hover:text-blue-400">Experience</a></li>
+        <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-bg">
+    <div>
+      <h1 class="hero-title">Abzal Basha S</h1>
+      <p class="hero-subtitle">Cloud & DevOps Engineer</p>
+      <p class="hero-contact mt-4">+91 6361818243 | <a href="mailto:abzalazzu123@gmail.com" class="text-blue-300">abzalazzu123@gmail.com</a></p>
+      <p class="hero-contact mt-2"><a href="https://www.linkedin.com/in/abzalbashas" target="_blank" class="text-blue-300">LinkedIn</a></p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-28">
+    <div class="container mx-auto text-center">
+      <h2 class="section-title" data-sr>About Me</h2>
+      <p class="text-lg max-w-2xl mx-auto" data-sr>I am a Cloud and DevOps Engineer with 3 years of experience specializing in infrastructure automation, CI/CD, and AWS services. I’ve designed and executed on-prem to cloud migrations and implemented modern DevOps practices to improve reliability, velocity, and quality.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-gray-800">
+    <div class="container mx-auto text-center">
+      <h2 class="section-title">Skills & Tools</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-8">
+        <!-- Graphical Skills -->
+        <div class="card">
+          <a href="https://aws.amazon.com/" target="_blank">
+            <img src="images/aws-icon.png" alt="AWS" class="skills-img mx-auto">
+            <h3 class="text-xl font-semibold">AWS</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://www.docker.com/" target="_blank">
+            <img src="images/docker-icon.png" alt="Docker" class="skills-img mx-auto">
+            <h3 class="text-xl font-semibold">Docker</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://kubernetes.io/" target="_blank">
+            <img src="images/kubernetes-icon.png" alt="Kubernetes" class="skills-img mx-auto">
+            <h3 class="text-xl font-semibold">Kubernetes</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://www.terraform.io/" target="_blank">
+            <img src="images/terraform-icon.png" alt="Terraform" class="skills-img mx-auto">
+            <h3 class="text-xl font-semibold">Terraform</h3>
+          </a>
+        </div>
+      </div>
+
+      <!-- Textual Skills -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-8 animated-skill-section">
+        <div class="card">
+          <h3 class="text-xl font-semibold">Programming: Python, Bash</h3>
+        </div>
+        <div class="card">
+          <h3 class="text-xl font-semibold">Data Stores & Cloud: MySQL, DynamoDB, AWS</h3>
+        </div>
+        <div class="card">
+          <h3 class="text-xl font-semibold">Tools: Ansible, Prometheus, Dockerhub, Jira</h3>
+        </div>
+        <div class="card">
+          <h3 class="text-xl font-semibold">Development: CI/CD, Git, Jenkins, Scrum, Agile</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="py-20 bg-opacity-80">
+    <div class="container mx-auto">
+      <h2 class="section-title">Experience</h2>
+      <!-- eClerx Services -->
+      <div class="card mb-8">
+        <h3 class="text-2xl font-bold">eClerx Services Pune, IN</h3>
+        <p class="text-lg font-semibold mt-2">Senior Analyst, AWS | 2021 - 11/2023</p>
+        <ul class="list-disc list-inside mt-4 text-lg">
+          <li>Designed and executed on-prem to AWS cloud migration for Take-two gaming websites for US clients.</li>
+          <li>Automated deployment of 280 Python scripts using Bash and AWS features, saving 80% of time and 70% of cost. Successfully converted the project from Python 2 to 3.8.0.</li>
+          <li>Managed AWS infrastructure including EC2, VPC, ELB, Subnets, control tower, AWS Organization, S3 buckets, and IAM security.</li>
+          <li>Provided mentorship to teammates in resolving issues and timely task completion.</li>
+        </ul>
+      </div>
+
+      <!-- Amazon (BCT Consulting) -->
+      <div class="card">
+        <h3 class="text-2xl font-bold">Amazon (BCT Consulting) Hyderabad</h3>
+        <p class="text-lg font-semibold mt-2">AWS Support Engineer | Since 11/2023</p>
+        <ul class="list-disc list-inside mt-4 text-lg">
+          <li>Specializes in code change management, database administration, and website functionality verification with AWS.</li>
+          <li>Proficient in AWS services such as EC2, RDS, Redshift, S3, and in managing AWS console credential rotation.</li>
+          <li>Skilled in CI/CD pipeline maintenance and Git management, delivering proactive client support and system optimization.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 bg-gray-100" style="background-image: url('images/your-projects-background.jpg'); background-size: cover; background-position: center;">
+    <div class="container mx-auto text-center">
+      <h2 class="section-title text-white" data-sr>Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+        <!-- Project Card 1 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg" data-sr>
+          <h3 class="text-xl font-semibold text-white">CI/CD Pipeline using Jenkins, Docker & Kubernetes</h3>
+          <p class="mt-4 text-white">Automated a full pipeline for microservices architecture with Jenkins, Docker, and Kubernetes.</p>
+          <a href="https://github.com/Abzalbasha/django-todo" target="_blank" class="text-blue-400 hover:underline">View on GitHub</a>
+        </div>
+        <!-- Project Card 2 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg" data-sr>
+          <h3 class="text-xl font-semibold text-white">Jenkins on EC2 using Terraform</h3>
+          <p class="mt-4 text-white">Configured Jenkins on EC2 with Terraform for automated setup and deployment.</p>
+          <a href="https://github.com/Abzalbasha/Jenkins-in-ec2-using-terraform" target="_blank" class="text-blue-400 hover:underline">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h2 class="section-title" data-sr>Contact</h2>
+      <p>If you have any questions or want to get in touch, feel free to email me at <a href="mailto:abzalazzu123@gmail.com" class="text-blue-400">abzalazzu123@gmail.com</a>.</p>
+    </div>
+  </section>
+
+  <!-- Initialize ScrollReveal -->
+  <script>
+    ScrollReveal().reveal('[data-sr]', {
+      distance: '50px',
+      duration: 1000,
+      easing: 'ease-out',
+      origin: 'bottom',
+      interval: 100
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 p-4 text-center text-white">
+    <p>&copy; 2024 Abzal Basha S. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
